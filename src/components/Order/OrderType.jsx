@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import DeliveryModal from "../components/DeliveryModal";
+import DeliveryModal from "../DeliveryModal";
 
 
 export default function OrderType() {

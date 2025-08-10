@@ -47,13 +47,12 @@ const Navbar = () => {
               </NavLink>
 
 
-              <a
-  href="/order"
+              <NavLink to="/orderr"
   className="bg-[#F79824] text-[#47160E] px-5 py-2 rounded-full shadow hover:bg-[#F5B219] transition"
 >
   <GiForkKnifeSpoon />
   Order Online
-</a>
+  </NavLink>
 
             </div>
 

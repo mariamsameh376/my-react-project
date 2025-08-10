@@ -9,8 +9,9 @@ import Contact from './pages/Contact/Contact';
 
 
 import About from "./pages/About/About";
-import OrderType from './pages/OrderType';
+import OrderType from './components/Order/OrderType';
 import PickupMenu from './pages/PickupMenu';
+import Orderr from './pages/Orderr/Orderr';
 
 const App = () => {
   return (
@@ -24,7 +25,7 @@ const App = () => {
         <Route path='/contact' element={<Contact />} />
         <Route path='/about' element={<About />} />
       
-     
+        <Route path='/orderr' element={<Orderr />} />
         
         <Route path="/order" element={<OrderType />} />
         <Route path="/order/menu" element={<PickupMenu />} />
