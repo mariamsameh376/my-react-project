@@ -1,3 +1,4 @@
+// src/components/Navbar/Navbar.jsx
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { GiForkKnifeSpoon } from "react-icons/gi";
@@ -9,15 +10,11 @@ import logo from '../../assets/logo-crepeup.png'; // تأكد من وجود ال
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // دالة تفتح رابط كامل في تاب جديد
-  const openOrderInNewTab = (e) => {
-    e.preventDefault(); // تمنع التنقل الافتراضي
-    const url = window.location.origin + '/order';
-    window.open(url, '_blank', 'noopener,noreferrer');
-  };
 
   return (
     <>
+      
+
       <nav className="bg-[#47160E] border-b-4 border-[#F79824] sticky top-0 z-50 font-qilka">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center h-20">
@@ -51,13 +48,13 @@ const Navbar = () => {
 
 
               <a
-                href="/order"
-                onClick={openOrderInNewTab}
-                className="bg-[#F79824] text-[#47160E] px-5 py-2 rounded-full shadow hover:bg-[#F5B219] transition flex items-center gap-2"
-              >
-                <GiForkKnifeSpoon />
-                Order Online
-              </a>
+  href="/order"
+  className="bg-[#F79824] text-[#47160E] px-5 py-2 rounded-full shadow hover:bg-[#F5B219] transition"
+>
+  <GiForkKnifeSpoon />
+  Order Online
+</a>
+
             </div>
 
             {/* Mobile Button */}
@@ -91,17 +88,13 @@ const Navbar = () => {
             </NavLink>
 
             <a
-              href="/order"
-              onClick={(e) => {
-                e.preventDefault();
-                const url = window.location.origin + '/order';
-                window.open(url, '_blank', 'noopener,noreferrer');
-              }}
-              className="bg-[#F79824] text-[#47160E] px-5 py-2 rounded-full shadow hover:bg-[#F5B219] transition flex items-center gap-2"
-            >
-              <GiForkKnifeSpoon />
-              Order Online
-            </a>
+  href="/order"
+  className="bg-[#F79824] text-[#47160E] px-5 py-2 rounded-full shadow hover:bg-[#F5B219] transition"
+>
+  <GiForkKnifeSpoon />
+  Order Online
+</a>
+
           </div>
         )}
       </nav>

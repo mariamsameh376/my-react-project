@@ -26,7 +26,7 @@ export default function OrderType() {
       {/* 🖼️ Hero Image */}
       <div className="relative">
         <img
-          src="/images/hero.png"
+          src="/assets/hero.png"
           alt="Hero"
           className="w-full h-72 object-cover"
         />
