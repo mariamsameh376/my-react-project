@@ -19,14 +19,14 @@ export default function OrderType() {
     <div className="bg-gray-100 min-h-screen">
       {/* 🔲 Black Bar */}
       <div className="bg-black text-white px-6 py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold tracking-wide">Oota Cuisine</div>
+        <div className="text-2xl font-bold tracking-wide">Crepe Up</div>
 
       </div>
 
       {/* 🖼️ Hero Image */}
       <div className="relative">
         <img
-          src="/assets/hero.png"
+          src="/assets/FRONT.jpg"
           alt="Hero"
           className="w-full h-72 object-cover"
         />
@@ -37,7 +37,7 @@ export default function OrderType() {
         <div className="w-full md:w-1/2 h-80 md:h-auto">
           <iframe
             title="Restaurant Location"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1610.5968563079505!2d-86.8011039!3d36.1618405!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886467674f9e6a91%3A0x9ed36a27636760ad!2sMidtown%20Foods!5e0!3m2!1sar!2seg!4v1754522639708!5m2!1sar!2segg"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1610.5968563079505!2d-86.8011039!3d36.1618405!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886467674f9e6a91%3A0x9ed36a27636760ad!2sMidtown%20Foods!5e0!3m2!1sar!2seg!4v1754522639708!5m2!1sar!2segg&hl=en"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -89,29 +89,30 @@ export default function OrderType() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Item 1 */}
           <div className="bg-white rounded-lg shadow p-4">
-            <h4 className="text-lg font-semibold">Shawarma Mix Sandwich</h4>
+            <h4 className="text-lg font-semibold">CORDON BLEU</h4>
             <p className="text-sm text-gray-600">
-              Beef and Chicken
+            Chicken Tenders, Ham, Turkey, Green Pepper, Lettuce, Provolone, Mozzarella
+            CORDON BLEU
             </p>
-            <span className="text-red-600 font-bold block mt-1">$13.99</span>
+            <span className="text-red-600 font-bold block mt-1">$15.99</span>
           </div>
 
           {/* Item 2 */}
           <div className="bg-white rounded-lg shadow p-4">
-            <h4 className="text-lg font-semibold">Hawawshi Sandwich</h4>
+            <h4 className="text-lg font-semibold">Crispy Overload</h4>
             <p className="text-sm text-gray-600">
-             Baladi Bread Stuffed with Ground Beef and Lamb Mix
+            Chicken Tenders (Double Stack), Green Pepper, Olives, Lettuce, Mozzarella
             </p>
-            <span className="text-red-600 font-bold block mt-1">$13.99</span>
+            <span className="text-red-600 font-bold block mt-1">$14.99</span>
           </div>
 
           {/* Item 3 */}
           <div className="bg-white rounded-lg shadow p-4">
-            <h4 className="text-lg font-semibold">Kofta Sandwish</h4>
+            <h4 className="text-lg font-semibold">Tender-Dog</h4>
             <p className="text-sm text-gray-600">
-              Egyption Kabob
+            Chicken Tenders, Hot Dogs, Green Pepper, Olives, Lettuce, Mozzarella
             </p>
-            <span className="text-red-600 font-bold block mt-1">$11.99</span>
+            <span className="text-red-600 font-bold block mt-1">$14.99</span>
           </div>
         </div>
       </div>
