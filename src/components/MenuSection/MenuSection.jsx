@@ -4,18 +4,18 @@ import { Link } from 'react-router-dom';
 const MenuSection = () => {
   const egyptianDishes = [
     {
-      name: "Chicken Shesh",
-      image: "/assets/Chicken Shesh.jpg",
+      name: "Chicken Tender",
+      image: "/assets/CrepeUp_ChickenTender_2880x2304.jpg",
       price: "$13.99"
     },
     {
-      name: "Hot Dog",
-      image: "/assets/Hot Dog.jpg",
-      price: "$11.99"
+      name: "Chicken Shesh",
+      image: "/assets/CrepeUp_ChickenShesh_2880x2304.jpg",
+      price: "$13.99"
     },
     {
       name: "Kofta",
-      image: "/assets/Kofta.jpg",
+      image: "/assets/CrepeUp_Kofta_2880x2304.jpg",
       price: "$13.99"
     },
 
@@ -24,10 +24,9 @@ const MenuSection = () => {
   return (
     <div className="font-sans max-w-7xl mx-auto px-4 py-12">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">HOT EGYPTIAN MEALS</h2>
-        <p className="text-lg max-w-2xl mx-auto">
-          We've got you covered with authentic flavors.
-        </p>
+        <h2 className="text-4xl font-bold text-[#F79824] mb-4">Crepes</h2>
+        
+       
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">

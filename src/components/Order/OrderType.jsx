@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import DeliveryModal from "../DeliveryModal";
+import { Link } from "react-router-dom";
 
 
 export default function OrderType() {
@@ -17,11 +18,12 @@ export default function OrderType() {
 
   return (
     <div className="bg-gray-100 min-h-screen">
-      {/* 🔲 Black Bar */}
-      <div className="bg-black text-white px-6 py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold tracking-wide">Crepe Up</div>
-
-      </div>
+    {/* 🔲 Black Bar */}
+    <div className="bg-black text-white px-6 py-4 flex justify-between items-center">
+<Link to="/" className="text-2xl font-bold tracking-wide">
+ Crepe Up
+</Link>
+</div>
 
       {/* 🖼️ Hero Image */}
       <div className="relative">
@@ -52,20 +54,24 @@ export default function OrderType() {
             <h2 className="text-xl font-bold text-gray-800 mb-2">Order Online</h2>
             <p className="text-gray-600 mb-6">Choose how you’d like to get your food.</p>
 
-            <div className="space-y-4">
-              <button
-                onClick={handlePickUp}
-                className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-4 rounded"
-              >
-                Pick Up
-              </button>
-              <button
-                onClick={handleDelivery}
-                className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded"
-              >
-                Delivery
-              </button>
-            </div>
+            <a
+  href="https://midtownfoodsnsh.com/s/crepe-up/614-18th-ave-n-nashville/6192302c-65ad-4823-936a-c5f0a5fc739d
+"
+  target="_blank"     // يفتح في تبويب جديد
+  rel="noopener noreferrer"
+  className="w-full block text-center bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-4 rounded"
+>
+  Pick Up
+</a>
+<a
+  href="https://www.ubereats.com/store/crepe-up/2I7KbnRSU82kaZegkwl5Gg?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMk5hc2h2aWxsZSUyMEFpcnBvcnQlMjBNYXJyaW90dCUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMjgwZGJlNDAxLWI1YzItM2Q5ZS04OWQ5LTA4NGJhZDY1MWI3ZiUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJ1YmVyX3BsYWNlcyUyMiUyQyUyMmxhdGl0dWRlJTIyJTNBMzYuMTUzOTQxJTJDJTIybG9uZ2l0dWRlJTIyJTNBLTg2LjY5MDIzMiU3RA%3D%3D&utm_source=menu-maker
+"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-full block text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded"
+>
+  Delivery
+</a>
 
             {/* ✅ Delivery Modal */}
             <DeliveryModal
@@ -85,37 +91,55 @@ export default function OrderType() {
 
       {/* ⭐ Popular Items */}
       <div className="mt-12 px-4 md:px-8 max-w-6xl mx-auto">
-        <h3 className="text-xl font-bold mb-4 text-gray-800">Popular Items</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Item 1 */}
-          <div className="bg-white rounded-lg shadow p-4">
-            <h4 className="text-lg font-semibold">CORDON BLEU</h4>
-            <p className="text-sm text-gray-600">
-            Chicken Tenders, Ham, Turkey, Green Pepper, Lettuce, Provolone, Mozzarella
-            CORDON BLEU
-            </p>
-            <span className="text-red-600 font-bold block mt-1">$15.99</span>
-          </div>
+  <h3 className="text-xl font-bold mb-4 text-gray-800">Popular Items</h3>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-          {/* Item 2 */}
-          <div className="bg-white rounded-lg shadow p-4">
-            <h4 className="text-lg font-semibold">Crispy Overload</h4>
-            <p className="text-sm text-gray-600">
-            Chicken Tenders (Double Stack), Green Pepper, Olives, Lettuce, Mozzarella
-            </p>
-            <span className="text-red-600 font-bold block mt-1">$14.99</span>
-          </div>
-
-          {/* Item 3 */}
-          <div className="bg-white rounded-lg shadow p-4">
-            <h4 className="text-lg font-semibold">Tender-Dog</h4>
-            <p className="text-sm text-gray-600">
-            Chicken Tenders, Hot Dogs, Green Pepper, Olives, Lettuce, Mozzarella
-            </p>
-            <span className="text-red-600 font-bold block mt-1">$14.99</span>
-          </div>
-        </div>
-      </div>
+    {/* Item 1 */}
+    <div className="bg-white rounded-lg shadow p-4">
+      <img
+        src="/assets/CrepeUp_CordonBleu_2880x2304.jpg"
+        alt="CORDON BLEU"
+        className="w-full h-40 object-cover rounded-md mb-3"
+      />
+      <h4 className="text-lg font-semibold">CORDON BLEU</h4>
+      <p className="text-sm text-gray-600">
+        Chicken Tenders, Ham, Turkey, Green Pepper, Lettuce, Provolone, Mozzarella
+      </p>
+      <span className="text-red-600 font-bold block mt-1">$15.99</span>
     </div>
+
+    {/* Item 2 */}
+    <div className="bg-white rounded-lg shadow p-4">
+      <img
+        src="/assets/CrepeUp_CrispyOverload_2880x2304.jpg"
+        alt="Crispy Overload"
+        className="w-full h-40 object-cover rounded-md mb-3"
+      />
+      <h4 className="text-lg font-semibold">Crispy Overload</h4>
+      <p className="text-sm text-gray-600">
+        Chicken Tenders (Double Stack), Green Pepper, Olives, Lettuce, Mozzarella
+      </p>
+      <span className="text-red-600 font-bold block mt-1">$14.99</span>
+    </div>
+
+    {/* Item 3 */}
+    <div className="bg-white rounded-lg shadow p-4">
+      <img
+        src="/assets/CrepeUp_TenderDog_2880x2304.jpg"
+        alt="Tender-Dog"
+        className="w-full h-40 object-cover rounded-md mb-3"
+      />
+      <h4 className="text-lg font-semibold">Tender-Dog</h4>
+      <p className="text-sm text-gray-600">
+        Chicken Tenders, Hot Dogs, Green Pepper, Olives, Lettuce, Mozzarella
+      </p>
+      <span className="text-red-600 font-bold block mt-1">$14.99</span>
+    </div>
+
+  </div>
+</div>
+
+      </div>
+    
   );
 }

@@ -7,7 +7,7 @@ const Banner = () => {
     <div className="relative h-screen overflow-hidden">
       {/* صورة الخلفية */}
       <img
-        src="/assets/bbanner-bg-2800x2304.jpg"
+        src="/assets/CrepeUp_Hero_2880x2304.jpg"
         alt="Karmooz Banner"
         className="absolute inset-0 w-full h-full object-cover z-0"
       />

@@ -16,22 +16,31 @@ const Footer = () => {
 
         {/* عن المطعم */}
         <div className="text-center sm:text-left">
-          <h2 className="text-[#F5B219] font-semibold mb-4 tracking-wide text-lg">ABOUT CREPE UP</h2>
-          <p className="text-white/80 leading-relaxed">
-          Crepe Up offers you delicious crepes and snacks with a modern Egyptian twist.
-          </p>
-          <div className="flex justify-center sm:justify-start gap-4 mt-5">
-            {[ FaFacebookF, FaInstagram].map((Icon, index) => (
-              <div
-                key={index}
-                className="bg-[#F79824] text-[#47160E] p-2 rounded-full hover:bg-white hover:text-[#47160E] transition text-lg"
-              >
-                <Icon />
-              </div>
-            ))}
-          </div>
-        </div>
+          <h2 className="text-[#F5B219] text-2xl font-semibold mb-4 tracking-wide ">Social</h2>
+         
+          <div className="flex gap-4 mt-6">
+  <a
+    href="https://www.facebook.com/share/1a2DHmXEpN/?mibextid=wwXIfr
 
+
+"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-[#221101] text-[#F9B93E] p-2 rounded-full hover:bg-[#F9B93E] hover:text-[#221101] transition"
+  >
+    <FaFacebookF />
+  </a>
+  <a
+    href="https://www.instagram.com/crepeupp?igsh=MWdtdWJhaHhuaG1lZw%3D%3D&utm_source=qr
+"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-[#221101] text-[#F9B93E] p-2 rounded-full hover:bg-[#F9B93E] hover:text-[#221101] transition"
+  >
+    <FaInstagram />
+  </a>
+</div>
+            </div>
         {/* لوجو */}
         <div className="flex flex-col items-center justify-center text-center relative group">
           <div className="absolute -inset-4 bg-[#F79824]/10 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

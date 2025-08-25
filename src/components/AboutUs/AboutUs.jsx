@@ -17,10 +17,13 @@ const AboutUs = () => {
           <div>
             <h3 className="text-2xl text-[#F79824] font-bold mb-2">MISSION STATEMENT:</h3>
             <p className="text-gray-300 leading-relaxed">
-            At Crepe Up, we’re reimagining the crepe experience—one bold, savory creation at a time. Gone are the predictable sweet fillings; instead, we craft unexpected, globally inspired flavors that challenge tradition and delight the senses. Using premium, locally sourced ingredients, we fold innovation into every bite, proving that crepes can be adventurous, satisfying, and anything but ordinary. Whether you’re a crepe skeptic or a culinary explorer, we invite you to taste the unexpected at Crepe Up—where every dish is a delicious departure from the norm. Prepare to crepe up..
-
+            At Crepe Up, we’re reimagining the crepe experience—one bold, savory creation at a time. Gone are the predictable sweet fillings; instead, we craft unexpected, globally inspired flavors that challenge tradition and delight the senses. Using premium, locally sourced ingredients, we fold innovation into every bite, proving that crepes can be adventurous, satisfying, and anything but ordinary. Whether you’re a crepe skeptic or a culinary explorer, we invite you to taste the unexpected at Crepe Up—where every dish is a delicious departure from the norm. 
+            <br /><br />
+            <span className="italic text-lg text-[#ffffff] mt-2">Prepare to crepe up..</span>
             </p>
+          
           </div>
+ 
 
   
         </div>

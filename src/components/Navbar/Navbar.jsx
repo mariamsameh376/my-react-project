@@ -41,7 +41,7 @@ const Navbar = () => {
                 About Us
               </NavLink>
               <NavLink
-  to="/orderr"
+  to="/order"
   className="flex items-center gap-2 bg-[#F79824] text-[#47160E] px-5 py-2 rounded-full shadow hover:bg-[#F5B219] transition"
 >
   <GiForkKnifeSpoon />
